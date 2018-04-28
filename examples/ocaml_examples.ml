@@ -31,7 +31,7 @@ let _ =
                          |> Option.unwrapUnsafely)
               |> resolve)
   )
-
+(* 
 let _ =
   let payload = Js.Dict.empty () in
   Js.Dict.set payload "hello" (Js.Json.string "world");
@@ -42,4 +42,4 @@ let _ =
                    (Js.Json.stringify (Js.Json.object_ payload)))
           ~headers:(Fetch.HeadersInit.make
                       ([%bs.obj { Content-Type = "application/json" }])) ()))
-      |> (then_ Fetch.Response.json)
+      |> (then_ Fetch.Response.json) *)
